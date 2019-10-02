@@ -14,8 +14,12 @@ export const StoriesContainer = () => {
 
 
 
-    return storyIds.slice(0,20).map( (storyId) => {
-        return <Story key = {storyId} storyId={storyId} />
-    });
+    return (
+        <>
+        <h1>Hacker News Stories</h1>
+        {storyIds.slice(0,20).map( (storyId) => {
+            return <Story key = {storyId} storyId={storyId} />
+        })}
+        </>)
 
 }
