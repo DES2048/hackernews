@@ -1,3 +1,6 @@
 import React from 'react';
+import {StoriesContainer} from './containers/storiesContainer'
 
-export const App = () => <p>Hello!</p>
+export const App = () => {
+    return <StoriesContainer />;
+}
